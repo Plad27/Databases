@@ -1,0 +1,106 @@
+{
+	"info": {
+		"_postman_id": "c1c01b5f-e2a7-453d-ad39-7f610131d530",
+		"name": "HypotheSYS",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "31063186"
+	},
+	"item": [
+		{
+			"name": "Get Intermediary",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/intermediary/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"intermediary",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Intermediary",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\" : \"test1\",\n    \"shortName\" : \"test\",\n    \"schemaName\": \"hypo_test1\",\n    \"status\": 1 \n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/intermediary",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"intermediary"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Intermediary",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/intermediary/4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"intermediary",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Intermediary ",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\" : \"testnew\",\n    \"shortName\" : \"tn\",\n    \"schemaName\": \"hypo_new\",\n    \"status\":  1\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/intermediary",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"intermediary"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
